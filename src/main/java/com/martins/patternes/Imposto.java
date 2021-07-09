@@ -9,14 +9,6 @@ package com.martins.patternes;
  *
  * @author gabri
  */
-public class Orcamento {
-    private double valor;
-    public Orcamento(double valor) {
-        this.valor = valor;
-        
-    }
-    public double getValor(){
-        return valor;
-    }
-    
+public interface Imposto {
+    double calcula(Orcamento orcamento);
 }

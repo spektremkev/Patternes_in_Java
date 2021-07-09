@@ -9,14 +9,11 @@ package com.martins.patternes;
  *
  * @author gabri
  */
-public class Orcamento {
-    private double valor;
-    public Orcamento(double valor) {
-        this.valor = valor;
-        
-    }
-    public double getValor(){
-        return valor;
-    }
+public class ICMS implements Imposto
+{
     
+    public double calcula(Orcamento orcamento)
+    {
+        return orcamento.getValor() * 0.1;
+    }
 }
